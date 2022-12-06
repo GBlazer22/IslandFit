@@ -332,7 +332,7 @@ color: #151515;
     background-size: cover;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (min-height:368px){
     .logo{
         position: fixed;
         top:4%;
@@ -350,22 +350,63 @@ color: #151515;
     }
     .exclusives{
         flex-direction: column;
-        margin-top: -2em;
+        margin-top: 12vh;
         grid-gap: 3vh;
-
+        padding: 25px;
+    }
+    .exclusives div span{
+        position: absolute;
+        top: 24%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color:rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    .exclusives div img{
+        margin-top: 1.5vh; 
     }
     .sub-title{
         font-size: larger;
         font-weight: 900;
+        margin-top: 3vh;
+        margin-bottom: -9vh;
     }
+    .exclusives2 div img{
+        margin-top: 1.5vh; 
+    }
+
     .exclusives2{
         flex-direction: column;
-        margin-top: -2em;
+        margin-top: 12vh;
         grid-gap: 3vh;
+        padding: 25px;
     }
     .exclusives3{
         flex-direction: column;
-        margin-top: -2em;
+        margin-top: 12vh;
         grid-gap: 3vh;
+        padding: 25px;
+    }
+    .exclusives2 div span{
+        position: absolute;
+        top: 24%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color:rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    .exclusives3 div span{
+        position: absolute;
+        top: 24%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color:rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    .exclusives3 div img{
+        margin-top: 1.5vh; 
     }
 }
