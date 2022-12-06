@@ -97,10 +97,11 @@ nav{
     margin: 25px 10px 20px;
     font-size: 2vw;
     font-weight: 700;
-    color: #333;
+    color: #fff;
     text-align: center;
-}
-    
+    transform: translateY(200%);
+
+}  
 .exclusives{
     grid-template-columns: repeat(auto-fit,minmax(33vh, 1fr));
     grid-gap: 13vh;
@@ -113,8 +114,8 @@ nav{
     cursor: pointer;
     display:flex;
     box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.644);
-
 }
+
 .exclusives div img{
     width: 100%;
     border-radius: 100px;
@@ -148,7 +149,7 @@ position: relative;
 }
 .container2{
     padding: 2% 17%;
-    background-color: wheat;
+    background-color:  #f7e7ce;
  
 }
 .exclusives2{
@@ -257,7 +258,7 @@ position: relative;
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    background-color: #face92;
+    background-color: #cfbc99;
 }
 .footer h4{
     margin-bottom:25px;
@@ -327,6 +328,44 @@ color: #151515;
     transition: 1s;
 }
 .back{
-    background-color: #face92;
+    background-color: #cfbc99;
     background-size: cover;
+}
+
+@media only screen and (max-width:700px){
+    .logo{
+        position: fixed;
+        top:4%;
+        left: 4%;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background-color: #000;
+        text-align: right;
+    }
+    .exclusives{
+        flex-direction: column;
+        margin-top: -2em;
+        grid-gap: 3vh;
+
+    }
+    .sub-title{
+        font-size: larger;
+        font-weight: 900;
+    }
+    .exclusives2{
+        flex-direction: column;
+        margin-top: -2em;
+        grid-gap: 3vh;
+    }
+    .exclusives3{
+        flex-direction: column;
+        margin-top: -2em;
+        grid-gap: 3vh;
+    }
 }
