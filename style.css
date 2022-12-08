@@ -55,7 +55,7 @@ nav{
 }
 .search-bar{
     background: #fff;
-    width: 70%;
+    width: 65%;
     margin: 20px auto;
     padding: 6px 10px 6px 30px;
     border-radius: 50px;
@@ -73,7 +73,7 @@ nav{
     background: transparent;
 }
 .search-bar form button{
-    background: #ff5361;
+    background: #ff1428;
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -109,7 +109,7 @@ nav{
     border-radius: 100px;
     margin-bottom: 5%;
     text-align: left;
-    background: #24996263;
+    background: #007FFF;
     padding: 5em;
     cursor: pointer;
     display:flex;
@@ -120,7 +120,7 @@ nav{
     width: 100%;
     border-radius: 100px;
     padding: 12px;
-    background: linear-gradient(75deg,rgb(9, 5, 243),rgb(29, 248, 0) 50%,transparent 50%);
+    background: linear-gradient(75deg,rgb(0, 225, 255),rgb(255, 255, 255) 50%,transparent 50%);
     background-size: 400%;
     background-position: 100% 100%;
     transition: background 0.5s;
@@ -140,18 +140,20 @@ position: relative;
 
 .exclusives div span{
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     color:rgb(255, 255, 255);
     font-weight: 600;
 }
+/*----#f7e7ce;----*/
 .container2{
     padding: 2% 17%;
-    background-color:  #f7e7ce;
+    background-color:  #F4F4F2;
  
 }
+/*----#24996263-----*/
 .exclusives2{
     grid-template-columns: repeat(auto-fit,minmax(33vh, 1fr));
     grid-gap: 13vh;
@@ -159,7 +161,7 @@ position: relative;
     border-radius: 100px;
     margin-bottom: 5%;
     text-align: left;
-    background: #24996263;
+    background: #007FFF;
     padding: 5em;
     cursor: pointer;
     display:flex;
@@ -169,7 +171,7 @@ position: relative;
     width: 100%;
     border-radius: 100px;
     padding: 12px;
-    background: linear-gradient(75deg,rgb(9, 5, 243),rgb(8, 252, 239) 50%,transparent 50%);
+    background: linear-gradient(75deg,rgb(0, 225, 255),rgb(255, 255, 255) 50%,transparent 50%);
     background-size: 400%;
     background-position: 100% 100%;
     transition: background 0.5s;
@@ -179,7 +181,7 @@ position: relative;
 }
 .exclusives2 div span{
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -200,7 +202,7 @@ position: relative;
     border-radius: 100px;
     margin-bottom: 5%;
     text-align: left;
-    background: #24996263;
+    background: #007FFF;
     padding: 5em;
     cursor: pointer;
     display:flex;
@@ -210,7 +212,7 @@ position: relative;
     width: 100%;
     border-radius: 100px;
     padding: 12px;
-    background: linear-gradient(75deg,rgb(9, 5, 243),rgb(252, 57, 8) 50%,transparent 50%);
+    background: linear-gradient(75deg,rgb(0, 225, 255),rgb(255, 255, 255) 50%,transparent 50%);
     background-size: 400%;
     background-position: 100% 100%;
     transition: background 0.5s;
@@ -220,7 +222,7 @@ position: relative;
 }
 .exclusives3 div span{
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -258,7 +260,7 @@ position: relative;
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    background-color: #cfbc99;
+    background-color: #f7e7ce;
 }
 .footer h4{
     margin-bottom:25px;
@@ -328,15 +330,39 @@ color: #151515;
     transition: 1s;
 }
 .back{
-    background-color: #cfbc99;
+    background-color: #f7e7ce;
     background-size: cover;
 }
+nav .fa-bars{
+    display: none;
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    background: #fff;
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.active:hover::after{
+    width: 100%;
+}
+
 
 @media only screen and (max-width:760px){
     .logo{
         position: fixed;
-        top:4%;
+        top: 1.2em;
         left: 4%;
+        width: 20%;
+
     }
     nav{
         position: fixed;
@@ -344,9 +370,42 @@ color: #151515;
         z-index: 100;
         display: inline-block;
         width: 100%;
-        padding: 100px 7% 0;
-        background-color: #000;
+        padding: 100px 7% 0px;
+        background-color:#007FFF;
         text-align: right;
+        max-height:100px ;
+        overflow: hidden;
+        transition: max-height 0.4s;
+    }
+    nav .nav-links li{
+        margin:10px 0;
+        display: block;
+    }
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+    nav .fa-bars{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color:#fff;
+        font-size: 28px;
+    }
+    
+    .active::after{
+        right: 5px;
+        transform: translate(-50%,50%);
+        bottom: 0%;
+        border-radius: 2px;
+    }
+    .hidemenu{
+        max-height: 300px;
+    }
+    .header h1{
+        padding-top: 35vh;
+        font-size: 7vw;
     }
     .exclusives{
         flex-direction: column;
@@ -370,7 +429,7 @@ color: #151515;
         font-size: larger;
         font-weight: 900;
         margin-top: 3vh;
-        margin-bottom: -9vh;
+        margin-bottom: -9.8vh;
     }
     .exclusives2 div img{
         margin-top: 1.5vh; 
@@ -409,4 +468,30 @@ color: #151515;
     .exclusives3 div img{
         margin-top: 1.5vh; 
     }
+    .search-bar{
+      transform: translate(0%,-3%);
+      width: 80%;
+      padding: 20px;
+      position: relative;
+    }
+    .search-bar form{
+        display: block;
+    }
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+    .cta{
+        padding: 15% 5%;
+    }
+
 }
