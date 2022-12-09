@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.cdnfonts.com/css/basileus" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/basileus" rel="stylesheet">
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -17,13 +19,13 @@
             <img src="logo.bmp" class="logo">
             <ul class="nav-links">
                 <li><a href="#" class="active">Cyclades</a></li>
-                <li><a href="#"class="active">Saronic</a></li>
-                <li><a href="#"class="active">Aegean</a></li>
+                <li><a href="#" class="active">Saronic</a></li>
+                <li><a href="#" class="active">Aegean</a></li>
             </ul>
-            <a href="#" class="register-btn">Register now</a>
+            <a href="#" class="register-btn" >Register now</a>
             <i class="fas fa-bars" onclick="togglebtn()"></i>
         </nav>
-        <div class="container">
+        <div class="container" data-aos="zoom-out-down">
             <h1>Find your next destination!</h1>
             <div class="search-bar">
                 <form>
@@ -49,8 +51,8 @@
         </div>
     </div>
     <div class="container2">
-            <h2 href="" class="sub-title">Cyclades</h2>
-        <div class="exclusives">
+        <h2 href="" class="sub-title" >Cyclades</h2>
+        <div class="exclusives" data-aos="fade-left">
             <div>
                 <img src="11.jpg">
                 <span>
@@ -75,7 +77,7 @@
         </div>
         <br> <br> <br>
         <h2 class="sub-title">Saronic</h2>
-        <div class="exclusives2">
+        <div class="exclusives2" data-aos="fade-right">
             <div>
                 <img src="2.jpg">
                 <span>
@@ -98,9 +100,9 @@
                 </span>
             </div>
         </div>
-        <br> <br> <br> 
+        <br> <br> <br>
         <h2 class="sub-title">Aegean</h2>
-        <div class="exclusives3">
+        <div class="exclusives3" data-aos="fade-up">
             <div>
                 <img src="5.jpg">
                 <span>
@@ -126,15 +128,17 @@
     </div>
 
     <div class="back"><br>
-    <section class="cta">
-        <h1>See our suggestions!</h1>
-        <a href=""class="hero-btn">Suggestions</a>
-    </section>
-</div>
+        <section class="cta" data-aos="flip-up">
+            <h1>See our suggestions!</h1>
+            <a href="" class="hero-btn">Suggestions</a>
+        </section>
+    </div>
     <section class="footer">
         <h4>About us</h4>
-        <p>IslandFit is a new website,created at 2022. Its based in Athens,Greece.  <br>Our target is helping our users find which island fits their needs for their vacation!</p>
-       <br> <div class="wrapper">
+        <p>IslandFit is a new website,created at 2022. Its based in Athens,Greece. <br>Our target is helping our users
+            find which island fits their needs for their vacation!</p>
+        <br>
+        <div class="wrapper">
             <a href="https://www.instagram.com/giannis.d.koutsoukos/" target="_blank" class="hover-fx"><i
                     class="fab fa-instagram"></i></a>
             <a href="https://twitter.com/search?q=%23beachcleanup" target="_blank" class="hover-fx"><i
@@ -147,12 +151,20 @@
                     class="fab fa-linkedin"></i></a>
         </div>
     </section>
-<script>
-    var navBar = document.getElementById("navBar");
-    function togglebtn(){
-        navBar.classList.toggle("hidemenu");
-    }
-</script>
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1800,
+        once: false,
+        mirror: true
+      });
+    </script>
 
 </body>
 
