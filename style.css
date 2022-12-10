@@ -104,7 +104,9 @@ nav{
     text-align: center;
     transform: translateY(159%);
     font-family: 'Basileus', sans-serif;
-
+    text-shadow: 0 2px 1px gold, 
+      -1px 3px 1px gold, 
+      -2px 5px 1px gold;
 }  
 .exclusives{
     grid-template-columns: repeat(auto-fit,minmax(33vh, 1fr));
@@ -279,6 +281,7 @@ position: relative;
     text-align: center;
     padding:5em;
     margin-top:5em;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .cta h1{
     color:#fff;
@@ -295,20 +298,26 @@ position: relative;
     text-align: center;
     padding: 30px 0;
     background-color: #bb7360;
+    
 
 }
 .footer h4{
     margin-bottom:25px;
     margin-top: 20px;
     font-weight:600;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
 }
 .footer p{
     color:rgba(0, 0, 0, 0.514);
+    
 }
 
 .wrapper a{
     color: rgb(0, 0, 0);
     background-color: #face92;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.22), 1px 0px 0px 0px rgba(0,0,0,0.22), 1px 2px 0px 0px rgba(0,0,0,0.22), 2px 1px 0px 0px rgba(0,0,0,0.22), 2px 3px 0px 0px rgba(0,0,0,0.22), 3px 2px 0px 0px rgba(0,0,0,0.22), 3px 4px 0px 0px rgba(0,0,0,0.22), 4px 3px 0px 0px rgba(0,0,0,0.22), 4px 5px 0px 0px rgba(0,0,0,0.22), 5px 4px 0px 0px rgba(0,0,0,0.22), 5px 6px 0px 0px rgba(0,0,0,0.22), 6px 5px 0px 0px rgba(0,0,0,0.22), 6px 7px 0px 0px rgba(0,0,0,0.22), 7px 6px 0px 0px rgba(0,0,0,0.22), 7px 8px 0px 0px rgba(0,0,0,0.22), 8px 7px 0px 0px rgba(0,0,0,0.22);
 }
 .hover-fx{
     font-size: 1.1rem;
