@@ -97,12 +97,12 @@ nav{
 }
 /*----exclusives-----*/
 .sub-title{
-    margin: 25px 10px 20px;
-    font-size: 2.2vw;
+    margin: 18px 10px 20px;
+    font-size: 2.1vw;
     font-weight: 700;
     color: #fff;
     text-align: center;
-    transform: translateY(160%);
+    transform: translateY(159%);
     font-family: 'Basileus', sans-serif;
 
 }  
@@ -398,6 +398,7 @@ nav .fa-bars{
         top: 1em;
         left: 4%;
         width: 30vw;
+        opacity: 1;
     }
     nav{
         position: fixed;
@@ -467,6 +468,7 @@ nav .fa-bars{
         font-weight: 900;
         margin-top: 3vh;
         margin-bottom: -9.8vh;
+        transform: translateY(180%);
     }
     .exclusives2 div img{
         margin-top: 1.5vh; 
