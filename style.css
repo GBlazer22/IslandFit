@@ -53,6 +53,9 @@ nav{
     text-align: center;
     padding-top: 16%;
     font-family: 'Basileus', sans-serif;
+    text-shadow: 4px 4px 0px #000, 
+    -4px 0 0px #000,
+    7px 4px 0 #fff;
 }
 
 .search-bar{
