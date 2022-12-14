@@ -29,11 +29,15 @@ nav{
     list-style:none;
     display: inline-block;
     margin: 10px 30px;
-    font-size: 1.339vw;
+    font-size: 1.839vw;
 }
 .nav-links li a{
     text-decoration: none;
     color: #fff;
+    font-family: Impact;
+    text-shadow: 4px 4px 0px #000;
+
+
 }
 .register-btn{
     background: #fff;
@@ -51,11 +55,12 @@ nav{
     font-weight: 700;
     color: #fff;
     text-align: center;
+    margin-bottom: 10px;
     padding-top: 16%;
-    font-family: 'Basileus', sans-serif;
+    font-family: Impact;
     text-shadow: 4px 4px 0px #000, 
     -4px 0 0px #000,
-    7px 4px 0 #fff;
+    7px 4px 0 rgb(0, 0, 0);
 }
 
 .search-bar{
@@ -407,7 +412,7 @@ nav .fa-bars{
 @media only screen and (max-width:720px){
     .logo{
         position: fixed;
-        top: 1em;
+        top: 0.9em;
         left: 4%;
         width: 30vw;
         opacity: 1;
@@ -426,13 +431,13 @@ nav .fa-bars{
         transition: max-height 0.4s;
     }
     nav .nav-links li{
-        margin:13px 13px;
-        display: block;
+        margin: 23.917vw 2.3vw;
+        display: flexbox;
         font-size: 5vw;
+        text-align: center;
     }
     .register-btn{
-        margin: 15px 0px 30px;
-        display: inline-block;
+        display: inline-flex;  
     }
     nav .fa-bars{
         display: block;
@@ -442,12 +447,12 @@ nav .fa-bars{
         color:#fff;
         font-size: 28px;
     }
-    
     .active::after{
         right: 5px;
         transform: translate(-50%,50%);
         bottom: 0%;
         border-radius: 2px;
+        opacity: 1;
     }
     .hidemenu{
         max-height: 300px;
