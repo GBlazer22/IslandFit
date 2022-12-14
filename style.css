@@ -107,9 +107,9 @@ nav{
     text-align: center;
     transform: translateY(159%);
     font-family: 'Basileus', sans-serif;
-    text-shadow: 0 2px 1px gold, 
-      -1px 3px 1px gold, 
-      -2px 5px 1px gold;
+    text-shadow: 0 2px 1px rgb(0, 0, 0), 
+      -1px 3px 1px rgb(0, 0, 0), 
+      -2px 5px 1px rgb(0, 0, 0);
 }  
 .exclusives{
     grid-template-columns: repeat(auto-fit,minmax(33vh, 1fr));
@@ -454,7 +454,7 @@ nav .fa-bars{
     }
     .header h1{
         padding-top: 35vh;
-        font-size: 7vw;
+        font-size: 10vw;
     }
     .exclusives{
         flex-direction: column;
@@ -522,7 +522,7 @@ nav .fa-bars{
         margin-top: 1.5vh; 
     }
     .search-bar{
-      transform: translate(0%,8%);
+      transform: translate(100%,8%);
       width: 80%;
       padding: 2vw;
       position: relative;
